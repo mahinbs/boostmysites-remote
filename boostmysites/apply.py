@@ -31,7 +31,7 @@ SERVER = "187.126.120.55"
 SERVER_KEY = "P2q4bXyznQL1BIgsCHJdpUPXUrPLvFWiizlaYUlNwXM="
 
 
-def sub(path: str, old: str, new: str, count: int | None = None) -> None:
+def sub(path, old, new, count=None):
     """Replace `old` with `new` in a file, byte for byte (line endings are kept as they are)."""
     p = ROOT / path
     data = p.read_bytes()
